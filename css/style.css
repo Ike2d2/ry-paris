@@ -8,7 +8,7 @@ body {
 .edge {
     display: flex;
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 120px;
     align-items: center;
     background-color: #f1a536;
     height: 100px;
@@ -57,7 +57,7 @@ footer nav {
 .section {
     display: flex;
     flex-direction: column;
-    padding: 60px 80px;
+    padding: 60px 120px;
 }
 
 h1 {
@@ -118,7 +118,7 @@ p {
 }
 
 #timeSection {
-    padding: 30px 80px;
+    padding: 30px 120px;
     background-color: #dadfea;
 }
 
@@ -129,10 +129,16 @@ p {
 
 .label {
     font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#props .label {
+    display: inline;
 }
 
 main {
-    width: calc(100% - 160px);
+    width: calc(100% - 240px);
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -145,6 +151,14 @@ main>p {
     font-size: 2.8em;
 }
 
+main>span {
+    margin: 20px 0;
+}
+
+main>span>span {
+    margin-left: 10px;
+}
+
 #columns {
     display: flex;
 }
@@ -155,10 +169,11 @@ main>p {
 
 li {
     font-size: 1.1em;
+    line-height: 1.5em;
 }
 
 ol li {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 ol {
@@ -169,19 +184,36 @@ ol {
 ul {
     list-style: disc;
     margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 5px;
 }
 
 #save {
     background-color: #a63223;
-    border: none;
     color: #fff;
-    height: 40px;
     border-radius: 50px;
+    padding: 0 30px;
+}
+
+.button {
+    border: none;
+    height: 40px;
     font-size: 1.1em;
-    padding: 20px 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+#print {
+    margin-left: 20px;
+    background-color: white;
+}
+
+#print img{
+    height:120%;
 }
 
 q {
@@ -192,4 +224,14 @@ q {
     padding: 40px 120px;
     color: #575656;
     margin: 40px 0;
+}
+
+.fa-star {
+    color: #a63223;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
