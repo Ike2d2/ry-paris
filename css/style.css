@@ -1,12 +1,14 @@
 body {
     background-color: #fff;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .edge {
     display: flex;
     justify-content: space-between;
-    padding: 0 120px;
+    padding: 0 80px;
     align-items: center;
     background-color: #f1a536;
     height: 100px;
@@ -18,10 +20,10 @@ nav {
     justify-content: space-around;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #000;
-    font-size: 1.4em;
+    font-size: 1.3vw;
 }
 
 footer span {
@@ -35,6 +37,8 @@ footer nav {
 
 #hero {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 #hero img {
@@ -43,18 +47,17 @@ footer nav {
 
 #hero span {
     position: absolute;
-    left: 25%;
     bottom: 100px;
     background-color: #fff;
     padding: 30px;
-    font-size:2.8em;
-    font-weight: bold;
+    font-size: 2.8em;
+    font-weight: 800;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    padding: 100px 120px;
+    padding: 60px 80px;
 }
 
 h1 {
@@ -64,20 +67,28 @@ h1 {
 
 .imgRow {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid green;
+    column-gap: 40px;
+}
+
+#where .imgRow {
+    column-gap: 70px;
 }
 
 .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     flex-grow: 1;
-    margin: 20px;
-    border: 1px solid blue;
+    font-size: .7vw;
+    background-color: #fff;
+    margin-top: 40px;
 }
 
 .img img {
-    /* object-fit: scale-down; */
-    border: 1px solid red;
+    width: 100%;
+    height: 100%;
 }
 
 #recipes {
@@ -85,10 +96,100 @@ h1 {
 }
 
 #where img {
-    border: 10px solid #dadfea;
+    border: 15px solid #dadfea;
 }
 
 p {
     padding: 10px 0;
     font-size: 2.5em;
+    margin-top: 20px;
+}
+
+#props {
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 3em;
+    width: 66%;
+    justify-content: space-between;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+
+#timeSection {
+    padding: 30px 80px;
+    background-color: #dadfea;
+}
+
+.headLabel {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+main {
+    width: calc(100% - 160px);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+}
+
+main>p {
+    font-weight: 800;
+    font-size: 2.8em;
+}
+
+#columns {
+    display: flex;
+}
+
+.column {
+    width: 50%;
+}
+
+li {
+    font-size: 1.1em;
+}
+
+ol li {
+    padding-bottom: 30px;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 20px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+#save {
+    background-color: #a63223;
+    border: none;
+    color: #fff;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    padding: 20px 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+q {
+    background-color: #eef0f4;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5em;
+    padding: 40px 120px;
+    color: #575656;
+    margin: 40px 0;
 }
