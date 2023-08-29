@@ -235,3 +235,14 @@ q {
     align-items: center;
     justify-content: center;
 }
+
+#video {
+    width: 800px;
+    height: 450px;
+    border: 15px solid #dadfea;
+}
+
+#video iframe {
+    width: 100%;
+    height: 100%;
+}
